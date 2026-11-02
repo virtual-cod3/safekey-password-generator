@@ -38,7 +38,7 @@ SafeKey/
 
 ## Live Demo
 
-GitHub Pages deployment coming soon.
+https://virtual-cod3.github.io/safekey-password-generator/
 
 ## How to Run Locally
 
