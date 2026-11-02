@@ -38,7 +38,7 @@ SafeKey/
 
 ## Live Demo
 
-[Open SafeKey – Password Generator](YOUR_GITHUB_PAGES_LINK_HERE)
+GitHub Pages deployment coming soon.
 
 ## How to Run Locally
 
