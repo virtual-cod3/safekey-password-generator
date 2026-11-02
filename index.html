@@ -1,0 +1,283 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+        content="SafeKey - Generate strong, secure and random passwords instantly.">
+
+    <title>SafeKey | Password Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar">
+
+        <a href="#" class="logo">
+            <span class="logo-icon">◆</span>
+            SafeKey
+        </a>
+
+        <span class="nav-label">PASSWORD GENERATOR</span>
+
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero">
+
+            <div class="security-badge">
+                <span class="status-dot"></span>
+                YOUR SECURITY STARTS HERE
+            </div>
+
+            <h1>
+                Create Strong.<br>
+                <span>Stay Secure.</span>
+            </h1>
+
+            <p>
+                Generate powerful, random passwords to protect your digital world.
+            </p>
+
+        </section>
+
+        <!-- Password Generator -->
+        <section class="generator-card">
+
+            <!-- Card Header -->
+            <div class="card-header">
+
+                <div>
+                    <h2>Password Generator</h2>
+                    <p>Customize your password settings</p>
+                </div>
+
+                <div class="lock-icon">🔒</div>
+
+            </div>
+
+            <!-- Generated Password -->
+            <div class="password-section">
+
+                <label>GENERATED PASSWORD</label>
+
+                <div class="password-box">
+
+                    <input
+                        type="text"
+                        id="passwordOutput"
+                        placeholder="Your password will appear here"
+                        readonly
+                        autocomplete="off"
+                    >
+
+                    <button
+                        type="button"
+                        id="copyBtn"
+                        class="copy-btn"
+                    >
+                        Copy
+                    </button>
+
+                </div>
+
+                <!-- Password Strength -->
+                <div class="strength-container">
+
+                    <div class="strength-info">
+
+                        <span>Password Strength</span>
+
+                        <span id="strengthText">Not generated</span>
+
+                    </div>
+
+                    <div class="strength-track">
+
+                        <div
+                            id="strengthBar"
+                            class="strength-bar"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Password Settings -->
+            <div class="settings-section">
+
+                <!-- Password Length -->
+                <div class="length-heading">
+
+                    <label for="lengthSlider">PASSWORD LENGTH</label>
+
+                    <input
+                        type="number"
+                        id="lengthSlider"
+                        min="4"
+                        max="64"
+                        step="1"
+                        value="16"
+                        required
+                    >
+
+                </div>
+
+                <!-- Character Options -->
+                <div class="options-heading">
+                    CHARACTER OPTIONS
+                </div>
+
+                <div class="options-grid">
+
+                    <label class="option">
+
+                        <input
+                            type="checkbox"
+                            id="uppercase"
+                            checked
+                        >
+
+                        <span>Uppercase (A-Z)</span>
+
+                    </label>
+
+                    <label class="option">
+
+                        <input
+                            type="checkbox"
+                            id="lowercase"
+                            checked
+                        >
+
+                        <span>Lowercase (a-z)</span>
+
+                    </label>
+
+                    <label class="option">
+
+                        <input
+                            type="checkbox"
+                            id="numbers"
+                            checked
+                        >
+
+                        <span>Numbers (0-9)</span>
+
+                    </label>
+
+                    <label class="option">
+
+                        <input
+                            type="checkbox"
+                            id="symbols"
+                            checked
+                        >
+
+                        <span>Symbols (!@#$)</span>
+
+                    </label>
+
+                </div>
+
+                <!-- Exclude Similar Characters -->
+                <label class="option exclude-option">
+
+                    <input
+                        type="checkbox"
+                        id="excludeSimilar"
+                    >
+
+                    <span>
+                        Exclude similar characters (i, l, 1, L, o, 0)
+                    </span>
+
+                </label>
+
+            </div>
+
+            <!-- Generate Button -->
+            <button
+                type="button"
+                id="generateBtn"
+                class="generate-btn"
+            >
+
+                <span>✦</span>
+                Generate Password
+
+            </button>
+
+            <!-- In-App Message -->
+            <p
+                id="message"
+                class="message"
+                aria-live="polite"
+                role="status"
+            ></p>
+
+        </section>
+
+        <!-- Features Section -->
+        <section class="features">
+
+            <div class="feature">
+
+                <span>🛡️</span>
+
+                <h3>Strong Security</h3>
+
+                <p>Randomized password generation.</p>
+
+            </div>
+
+            <div class="feature">
+
+                <span>⚡</span>
+
+                <h3>Instant Results</h3>
+
+                <p>Generate passwords in seconds.</p>
+
+            </div>
+
+            <div class="feature">
+
+                <span>🔐</span>
+
+                <h3>Privacy First</h3>
+
+                <p>Passwords are generated locally in your browser.</p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+
+        <p>
+            © 2026 SafeKey. Create Strong. Stay Secure.
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
